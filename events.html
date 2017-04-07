@@ -1,0 +1,298 @@
+<!--
+Author: Divyansh B.
+Page Info: Universal Layout 
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Sunder Deep : Student Schedule</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Minimal Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="css/font-awesome.css" rel="stylesheet"> 
+    
+    <!-- online icons pack 
+    <script src="http://use.fontawesome/f384031aa8.js">
+    </script>-->
+<script src="js/jquery.min.js"> </script>
+<script src="js/bootstrap.min.js"> </script>
+  
+<!-- Mainly scripts -->
+<script src="js/jquery.metisMenu.js"></script>
+<script src="js/jquery.slimscroll.min.js"></script>
+<!-- Custom and plugin javascript -->
+<link href="css/custom.css" rel="stylesheet">
+<script src="js/custom.js"></script>
+<script src="js/screenfull.js"></script>
+		<script>
+		$(function () {
+			$('#supported').text('Supported/allowed: ' + !!screenfull.enabled);
+
+			if (!screenfull.enabled) {
+				return false;
+			}
+
+			
+
+			$('#toggle').click(function () {
+				screenfull.toggle($('#container')[0]);
+			});
+			
+
+			
+		});
+		</script>
+
+        <!-- script for nav bar options -->
+        <style>
+    
+            .navbar-buttons
+            {
+                background: crimson;
+                width: 110px;
+                height: 60px;
+                 
+            }            
+            
+        </style>
+        
+        
+    
+    
+
+</head>
+<body>
+<div id="wrapper">
+       <!----->
+        <nav class="navbar-default navbar-static-top" role="navigation">
+             <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               <h1> <a class="navbar-brand">Student</a></h1>         
+			   </div>
+			 <div class=" border-bottom">
+        	<div class="full-left">
+        	  <section class="full-top">
+				<button id="toggle"><i class="fa fa-arrows-alt"></i></button>
+                  
+                  
+			</section>
+                <!--
+			<form class=" navbar-left-right">
+              <input type="text"  value="Search..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search...';}">
+              <input type="submit" value="" class="fa fa-search">
+            </form>
+                // this commented section includes the search bar previouly shown on the nav
+                // quite surprisingly, the nav bar is just the horizontal tab on the top
+                -->
+            <div class="clearfix"> </div>
+           </div>
+     
+       
+            <!-- Brand and toggle get grouped for better mobile display -->
+		 
+		   <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="drop-men" >
+		        <ul class=" nav_1">
+		           
+		    		
+					<li class="dropdown">
+		              <a href="#" class="dropdown-toggle dropdown-at" data-toggle="dropdown">
+                          <span class=" name-caret">
+                              UserName
+                              <i class="caret"></i>
+                          </span>                          
+                      </a>
+                        <img src="images/wo.jpg">
+		              <ul class="dropdown-menu " role="menu">
+		               <li>
+                            <a href="profile.html">
+                                <i class="fa fa-user "></i>
+                                Profile
+                            </a>
+                          </li>	
+		                <li>
+                            <a href="inbox.html">
+                                <i class="fa fa-envelope"></i>
+                                Inbox
+                            </a>
+                          </li>		                
+		                <li>
+                            <a href="inbox.html">
+                                <i class="fa fa-sign-out"></i>
+                                Log Out
+                            </a>
+                          </li>
+		              </ul>
+		            </li>
+		           
+		        </ul>
+		     </div><!-- /.navbar-collapse -->
+			<div class="clearfix">
+       
+     </div>
+	  
+		    <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                <ul class="nav" id="side-menu">
+				
+                    <!-- edit : side nav change kiya hai, username daalna hai, profile pic change karni hai, href links change karne hai, icons change karne hain-->
+                    
+                    <li>
+                        <a href="schedules.html" class=" hvr-bounce-to-right">
+                            <i class="fa fa-calendar nav_icon "></i>
+                            <span class="nav-label">
+                                Schedules
+                            </span> 
+                        </a>
+                    </li>
+                    <!-- add schedule icon here-->
+                   
+                    <li>
+                        <a href="events.html" class=" hvr-bounce-to-right">
+                            <i class="fa fa-list-alt nav_icon"></i> 
+                            <span class="nav-label">
+                                Events
+                            </span>
+                        </a>
+                        
+                    </li>
+					 <li>
+                        <a href="attendance.html" class=" hvr-bounce-to-right">
+                            <i class="fa fa-user nav_icon"></i> 
+                            <span class="nav-label">
+                                Attendance
+                            </span> 
+                         </a>
+                    </li>
+                    
+                    <li>
+                        <a href="result.html" class=" hvr-bounce-to-right">
+                            <i class="fa fa-file-text nav_icon"></i> 
+                            <span class="nav-label">
+                                Results
+                            </span>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="contact_test.html" class=" hvr-bounce-to-right">
+                            <i class="fa fa-question-circle nav_icon"></i> 
+                            <span class="nav-label">
+                                Help Desk
+                            </span>
+                            
+                         </a>
+                        
+                    </li>
+                     
+                   
+                    
+                </ul>
+            </div>
+			</div>
+        </nav>
+		 <div id="page-wrapper" class="gray-bg dashbard-1">
+       <div class="content-main">
+ 
+ 	<!--banner-->	
+		     <div class="banner">
+		    	<h2>
+				<a href="student_index.html">Home</a>
+				<i class="fa fa-angle-right"></i>
+                    <a href="events.html">Events</a>
+				<span></span>
+				</h2>
+		    </div>
+		<!--//banner-->
+ 	 <!--faq-->
+ 	<div class="blank">
+	
+
+			<div class="blank-page">
+                <!-- https://www.w3schools.com/howto/howto_css_modals.asp ye link se add karna hai-->
+                 <div class="banner">                   
+                     <img src="images/wo.jpg" > 
+                         Event Headline 
+                            <br/>
+                                This event is very good. Will be on that day.
+                    <input class="btn" type="button" value="view more" id="button1" data-toggle="modal" data-target="#myModal1">                     
+                        
+                </div>
+                
+                <div class="banner">                   
+                     <img src="images/wo.jpg" > 
+                         Event Headline 
+                            <br/>
+                                This event is very good. Will be on that day.
+                    <input class="btn" type="button" value="view more" id="button1" data-toggle="modal" data-target="#myModal1">                     
+                        
+                </div>
+                
+                <div class="banner">                   
+                     <img src="images/wo.jpg" > 
+                         Event Headline 
+                            <br/>
+                                This event is very good. Will be on that day.
+                    <input class="btn" type="button" value="view more" id="button1" data-toggle="modal" data-target="#myModal1">                     
+                        
+                </div>
+        
+                <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+								<h2 class="modal-title"><center>Text Headline</center></h2>
+							</div>
+							<div class="modal-body">							                                
+                                <h2>Overflowing text to show scroll behavior</h2>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+								<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+								<p><img src="images/pic3.jpg" class="img-responsive" alt="Fountain" class="img-rounded img-responsive"></p>
+								<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+								<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                            </div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Register</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div>
+            
+                
+	        	
+	        </div>
+	       </div>
+	
+	<!--//faq-->
+		<!---->
+<div class="copy">
+            <p> &copy; 2017 ADS GROUP. All Rights Reserved | Designed for Sunder Deep Group Of Institutions </p>	    </div>
+		</div>
+		</div>
+		<div class="clearfix"> </div>
+       </div>
+     
+<!---->
+<!--scrolling js-->
+	<script src="js/jquery.nicescroll.js"></script>
+	<script src="js/scripts.js"></script>
+	<!--//scrolling js-->
+</body>
+</html>
+
