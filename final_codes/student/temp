@@ -1,0 +1,9 @@
+ 								<div class="form-group">
+                                    <label class="col-md-2 control-label">Checkbox Addon</label>
+                                    <div class="col-md-8">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><input type="checkbox"></div>
+                                            <input type="text" class="form-control1">
+                                        </div>
+                                    </div>
+                                </div>
