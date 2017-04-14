@@ -1,0 +1,339 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title>Sunder Deep : Master Universal Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Minimal Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <link href="css/font-awesome.css" rel="stylesheet">
+
+    <!-- online icons pack 
+    <script src="http://use.fontawesome/f384031aa8.js">
+    </script>-->
+    <script src="js/jquery.min.js">
+    </script>
+    <script src="js/bootstrap.min.js">
+    </script>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery.metisMenu.js"></script>
+    <script src="js/jquery.slimscroll.min.js"></script>
+    <!-- Custom and plugin javascript -->
+    <link href="css/custom.css" rel="stylesheet">
+    <script src="js/custom.js"></script>
+    <script src="js/screenfull.js"></script>
+    <script>
+        $(function() {
+            $('#supported').text('Supported/allowed: ' + !!screenfull.enabled);
+
+            if (!screenfull.enabled) {
+                return false;
+            }
+
+
+
+            $('#toggle').click(function() {
+                screenfull.toggle($('#container')[0]);
+            });
+
+
+
+        });
+    </script>
+
+    <!-- script for nav bar options -->
+    <style>
+        .navbar-buttons {
+            background: crimson;
+            width: 110px;
+            height: 60px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <!----->
+        <nav class="navbar-default navbar-static-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <h1> <a class="navbar-brand">Master</a></h1>
+            </div>
+            <div class=" border-bottom">
+                <div class="full-left">
+                    <section class="full-top">
+                        <button id="toggle"><i class="fa fa-arrows-alt"></i></button>
+
+
+
+                        <div class="clearfix"> </div>
+                    </section>
+                </div>
+            </div>
+            <div class="drop-men">
+                <ul class=" nav_1">
+
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle dropdown-at" data-toggle="dropdown">
+                            <span class=" name-caret">
+                              UserName
+                              <i class="caret"></i>
+                          </span>
+                        </a>
+                        <img src="images/wo.jpg">
+                        <ul class="dropdown-menu " role="menu">
+                            <li>
+                                <a href="master_profile.jsp">
+                                    <i class="fa fa-user "></i> Profile
+                                </a>
+                            </li>
+                           <!--  <li>
+                                <a href="master_inbox.jsp">
+                                    <i class="fa fa-envelope"></i> Inbox
+                                </a>
+                            </li> -->
+                            <li>
+                                <a href="ERP_login.jsp">
+                                    <i class="fa fa-sign-out"></i> Log Out
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+            <div class="clearfix">
+
+            </div>
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a href="master_addUser.jsp" class=" hvr-bounce-to-right">
+                                <i class="fa fa-user-plus nav_icon"></i>
+                                <span class="nav-label">
+                                 Add New User
+                            </span>
+                            </a>
+                        </li>
+                     <li>
+                            <a href="master_viewUser.jsp" class=" hvr-bounce-to-right">
+                                <i class="fa fa-users nav_icon"></i>
+                                <span class="nav-label">
+                                Manage Users
+                            </span>
+                            </a>
+                        </li>   
+						 <li>
+                            <a href="master_deleteRecord.jsp" class=" hvr-bounce-to-right">
+                                <i class="fa fa-user-times nav_icon"></i>
+                                <span class="nav-label">
+                                Delete Users
+                            </span>
+                            </a>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="content-main">
+
+                <!--banner-->
+                <div class="banner">
+                    <h2>
+                        <a href="master_index.jsp">Home</a>
+                        <i class="fa fa-angle-right"></i> 
+						<a href="master_viewUser.jsp">Manage Users</a>
+                        <span></span>
+                    </h2>
+                </div>
+                <!--//banner-->
+                <!--faq-->
+                <div class="blank">
+
+
+                    <div class="blank-page">
+
+                      <center>
+
+                            <label>Username</label>
+                            <input type="search">
+
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">go</button>
+
+                            <!-- the modal content -->
+
+                            <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                            <h2 class="modal-title">
+                                                <center>
+                                                    User Details
+                                                </center>
+                                            </h2>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class=" profile">
+                                                <div class="profile- col-md-12">
+                                                    <div class="profile-bottom-top">
+
+                                                        <img src="images/pr.jpg" alt="profile picture">
+
+                                                        <div class="col-md-8 profile-text">
+
+                                                            <h6>Divyansh Bhardwaj</h6>
+                                                            <table>
+                                                                <center>
+                                                                    <tr>
+                                                                        <td>Department</td>
+                                                                        <td>:</td>
+                                                                        <td>CSE</td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>Branch</td>
+                                                                        <td> :</td>
+                                                                        <td>B. Tech</td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>Year</td>
+                                                                        <td> :</td>
+                                                                        <td>4th</td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>Roll No</td>
+                                                                        <td>:</td>
+                                                                        <td>1332810008</td>
+                                                                    </tr>
+
+                                                                    <th>
+                                                                        <br/>
+                                                                        <h5>Personal Details</h5>
+                                                                    </th>
+
+                                                                    <br/>
+
+                                                                    <tr>
+                                                                        <td>Contact Number</td>
+                                                                        <td>:</td>
+                                                                        <td>+917503918478</td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>Email</td>
+                                                                        <td> :</td>
+                                                                        <td>divyanshb22@gmail.com</td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>Father's Name</td>
+                                                                        <td> :</td>
+                                                                        <td>papa</td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>Father's Email</td>
+                                                                        <td>:</td>
+                                                                        <td>papa@gmail.com</td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>Father's Number </td>
+                                                                        <td>:</td>
+                                                                        <td>454765465656</td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>Mother's Name</td>
+                                                                        <td>:</td>
+                                                                        <td>mammi</td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>Mother's Email</td>
+                                                                        <td>:</td>
+                                                                        <td>mammi@gmail.com</td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>Mother's Number</td>
+                                                                        <td>:</td>
+                                                                        <td>876945321</td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>Address</td>
+                                                                        <td>:</td>
+                                                                        <td>Room Mahal, Prem Gali, KHoli No 420</td>
+                                                                    </tr>
+                                                                </center>
+                                                            </table>
+
+                                                        </div>
+														
+                                                    </div>
+                                                </div>
+												<div class="modal-footer">
+													<center>
+														<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+													<button type="button" class="btn btn-primary"  onclick="window.location.href='master_manage.jsp'" >Manage</button>
+													</center>
+												</div>
+                                                <!-- /.modal-content -->
+                                            </div>
+                                            <!-- /.modal-dialog -->
+                                        </div>
+										
+
+                                    </div>
+                                </div>
+                            </div>
+                        </center>
+
+                    </div>
+                </div>
+
+                <!--//faq-->
+                <!---->
+                <div class="copy">
+                    <p> &copy; 2017 ADS GROUP. All Rights Reserved | Designed for Sunder Deep Group Of Institutions </p>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+
+</body>
+
+</html>
